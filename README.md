@@ -4,6 +4,7 @@ Beschreibung
 PeakLog ist eine einfache Fitness-App, die Trainingspläne und Workouts verwaltet und Sensordaten des Smartphones nutzt.
 Die App wurde mit React Native / Expo entwickelt und speichert Daten in Firebase (Auth + Firestore).
 
+
 Funktionen
 
 Registrierung / Login (Firebase Auth)
@@ -26,11 +27,13 @@ Gyroskop
 
 Toggle-Switch zum Aktivieren/Deaktivieren der Sensoren
 
+
 Installation (lokal)
 git clone https://github.com/adrianlangenstein093-hue/M335-Abschlussarbeit.git
 cd M335-Abschlussarbeit
 npm install
 npx expo start
+
 
 APK erstellen
 
@@ -50,6 +53,7 @@ eas build -p android --profile release
 
 Expo erstellt anschließend die APK in der Cloud und gibt einen Download-Link aus.
 
+
 Benutzte Sensoren
 
 Schrittzähler:
@@ -58,6 +62,7 @@ Wird auf der Startseite angezeigt. Zählt Schritte, solange Tracking aktiv ist.
 Gyroskop:
 Zeigt Rotationswerte (x/y/z) des Geräts an.
 Wird ebenfalls über denselben Tracking-Switch gesteuert.
+
 
 Firebase
 
@@ -68,6 +73,7 @@ Firebase Authentication
 Firestore (Speichern der Pläne, Übungen, Workouts)
 
 Das Firebase-Setup liegt im Projekt unter src/context/AuthContext.tsx und firebaseConfig.ts.
+
 
 Struktur
 
@@ -81,24 +87,5 @@ eas.json – Build-Konfiguration für APK
 
 app.json – Expo-Konfiguration
 
-Testplan (Kurzfassung)
 
-Die wichtigsten Funktionen wurden getestet:
-
-Registrierung → erfolgreich
-
-Login → erfolgreich
-
-Passwort ändern → funktioniert
-
-Plan erstellen → wird gespeichert
-
-Workout starten → speichern möglich
-
-History → Daten werden geladen
-
-Schrittzähler → zählt korrekt
-
-Gyroskop → Werte ändern sich bei Bewegung
-
-Logout → funktioniert
+Testplan ist im Wiki 
