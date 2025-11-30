@@ -17,6 +17,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "ch.adrian.m335gymapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -34,6 +35,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "12da09cc-65d7-425c-a9f1-ff0e86e8b2ff"
+      }
+    },
+    "owner": "godadri"
   }
 }
