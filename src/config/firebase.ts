@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBMh2KqES20U99V_5MSGnNDlkMLZaEkvA4",
+  apiKey: "",
   authDomain: "gympeak-4f511.firebaseapp.com",
   projectId: "gympeak-4f511",
   storageBucket: "gympeak-4f511.firebasestorage.app",
